@@ -29,7 +29,6 @@ jobs:
       - name: Archive build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: calendar-artifacts
           path: build  # Adjusted to use the 'build' directory
 
   deploy:
@@ -38,7 +37,7 @@ jobs:
       pages: write      # to deploy to Pages
       id-token: write   # to verify the deployment originates from an appropriate source
     environment:
-      name: calendar-artifacts
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
