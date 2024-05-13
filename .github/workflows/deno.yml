@@ -8,7 +8,7 @@ on:
     - cron: "0 0 * * *"  # Trigger at midnight every day
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
