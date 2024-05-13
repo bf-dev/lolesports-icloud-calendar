@@ -28,7 +28,6 @@ jobs:
       - name: Remove .gitkeep files
         run: |
           find . -type f -name ".gitkeep" -delete
-          chmod 600 -R build
           
       - name: Build Calendar
         run: deno run --allow-write --allow-net main.ts
@@ -49,6 +48,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
