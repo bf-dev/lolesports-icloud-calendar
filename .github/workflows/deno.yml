@@ -13,7 +13,7 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -32,22 +32,6 @@ jobs:
       - name: Build Calendar
         run: deno run --allow-write --allow-net main.ts
 
-      - name: Archive build artifacts
-        uses: actions/upload-artifact@v1
-        with:
-          name: github-pages
-          path: build  # Adjusted to use the 'build' directory
-
-  deploy:
-    needs: build
-    permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
