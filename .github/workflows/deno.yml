@@ -1,0 +1,39 @@
+name: Deno
+
+on:
+  push:
+    branches:
+      - main  # Change this to the branch you want to trigger the workflow on
+  schedule:
+    - cron: "0 0 * * *"  # Trigger at midnight every day
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v4
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.42.1
+          
+      - name: Remove .gitkeep files
+        run: |
+          find . -type f -name ".gitkeep" -delete
+          
+      - name: Build Calendar
+        run: deno run --allow-write --allow-net main.ts
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
