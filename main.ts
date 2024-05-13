@@ -37,7 +37,7 @@ if (import.meta.main) {
   const esportsClient = new LolEsportsClient(requestClient);
   const leagues = await esportsClient.getLeagues();
   leagues.forEach(async (league) => {
-    const schedule = await esportsClient.getScheduleByLeague(league);
+    const schedule = await esportsClient.getAllScheduleByLeague(league);
     //filter null
     const icsEvents = schedule
       .map(eventToIcs)

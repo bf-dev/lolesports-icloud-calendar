@@ -1,36 +1,35 @@
-
 import axiod from "https://deno.land/x/axiod@0.26.2/mod.ts";
 export enum EventType {
-  Match = 'match',
-  Show = 'show',
+  Match = "match",
+  Show = "show",
 }
 
 export enum Flag {
-  HasVod = 'hasVod',
-  IsSpoiler = 'isSpoiler',
-  HasRecap = 'hasRecap',
+  HasVod = "hasVod",
+  IsSpoiler = "isSpoiler",
+  HasRecap = "hasRecap",
 }
 
 export enum Outcome {
-  Loss = 'loss',
-  Win = 'win',
+  Loss = "loss",
+  Win = "win",
 }
 
 export enum Provider {
-  Trovo = 'trovo',
-  Twitch = 'twitch',
-  Youtube = 'youtube',
+  Trovo = "trovo",
+  Twitch = "twitch",
+  Youtube = "youtube",
 }
 
 export enum State {
-  Completed = 'completed',
-  InProgress = 'inProgress',
-  Unstarted = 'unstarted',
+  Completed = "completed",
+  InProgress = "inProgress",
+  Unstarted = "unstarted",
 }
 
 export enum StrategyType {
-  BestOf = 'bestOf',
-  PlayAll = 'playAll',
+  BestOf = "bestOf",
+  PlayAll = "playAll",
 }
 
 export interface DisplayPriority {
@@ -124,9 +123,9 @@ export class LolEsportsClient {
   }
 
   public async getLeagues(): Promise<League[]> {
-    const response = await this.getData<LolEsportsResponse<{ leagues: League[] }>>(
-      '/persisted/gw/getLeagues' + this.queryString(),
-    );
+    const response = await this.getData<
+      LolEsportsResponse<{ leagues: League[] }>
+    >("/persisted/gw/getLeagues" + this.queryString());
     this.leagues = response.data.leagues;
     return this.leagues;
   }
@@ -138,7 +137,7 @@ export class LolEsportsClient {
     return (
       this.leagues.find(
         (league) =>
-          league.name === leagueName || league.slug === leagueName.toLowerCase(),
+          league.name === leagueName || league.slug === leagueName.toLowerCase()
       ) || null
     );
   }
@@ -146,15 +145,37 @@ export class LolEsportsClient {
   public async getSchedule(): Promise<EsportEvent[]> {
     const response = await this.getData<
       LolEsportsResponse<{ schedule: Schedule }>
-    >('/persisted/gw/getSchedule' + this.queryString());
+    >("/persisted/gw/getSchedule" + this.queryString());
     return response.data.schedule.events;
   }
 
   public async getScheduleByLeague(league: League): Promise<EsportEvent[]> {
     const response = await this.getData<
       LolEsportsResponse<{ schedule: Schedule }>
-    >('/persisted/gw/getSchedule' + this.queryString({ leagueId: league.id }));
+    >("/persisted/gw/getSchedule" + this.queryString({ leagueId: league.id }));
     return response.data.schedule.events;
+  }
+
+  public async getAllScheduleByLeague(league: League): Promise<EsportEvent[]> {
+    const events: EsportEvent[] = [];
+    const initialResponse = await this.getData<
+      LolEsportsResponse<{ schedule: Schedule }>
+    >("/persisted/gw/getSchedule" + this.queryString({ leagueId: league.id }));
+    events.push(...initialResponse.data.schedule.events);
+
+    let older: null | string = initialResponse.data.schedule.pages.older;
+
+    while (older) {
+      const pageResponse: LolEsportsResponse<{ schedule: Schedule }> =
+        await this.getData<LolEsportsResponse<{ schedule: Schedule }>>(
+          "/persisted/gw/getSchedule" + this.queryString({ pageToken: older, leagueId: league.id })
+        );
+
+      events.push(...pageResponse.data.schedule.events);
+      older = pageResponse.data.schedule.pages.older;
+    }
+
+    return events;
   }
 
   private async getData<T>(path: string): Promise<T> {
@@ -163,7 +184,7 @@ export class LolEsportsClient {
   }
 
   private queryString(query: { [key: string]: string } = {}): string {
-    const params = new URLSearchParams({ hl: 'en-GB', ...query });
+    const params = new URLSearchParams({ hl: "en-GB", ...query });
     return `?${params.toString()}`;
   }
 }
