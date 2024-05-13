@@ -28,7 +28,8 @@ function eventToIcs(event: EsportEvent): Event | null {
     title: `${event.match?.teams[0].code} vs ${event.match?.teams[1].code}`,
     beginDate: date,
     endDate: addHoursToDate(date, event.match.strategy.count * 0.5),
-    desc: `${event.league.name} ${event.blockName}: ${event.match?.teams[0].name} vs ${event.match?.teams[1].name}`
+    desc: `${event.league.name} ${event.blockName}: ${event.match?.teams[0].name} vs ${event.match?.teams[1].name}`,
+    zone: "utc"
   });
 }
 
