@@ -1,5 +1,7 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:peron/simple_ics
+X-WR-CALNAME:TFT Remix Rumble
+NAME:TFT Remix Rumble
+PRODID:bf-dev/lolesports-icloud-calendar
 METHOD:PUBLISH
 END:VCALENDAR
