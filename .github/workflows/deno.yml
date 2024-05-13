@@ -1,11 +1,11 @@
-name: Build Calendar
+name: Deno
 
 on:
   push:
     branches:
-      - main
+      - main  # Change this to the branch you want to trigger the workflow on
   schedule:
-    - cron: "0 0 * * *" 
+    - cron: "0 0 * * *"  # Trigger at midnight every day
 
 permissions:
   contents: read
@@ -30,20 +30,22 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: calendar-artifacts
-          path: build
+          path: build  # Adjusted to use the 'build' directory
 
-  publish:
-    runs-on: ubuntu-latest
+  deploy:
     needs: build
-
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    environment:
+      name: github-pages
+    runs-on: ubuntu-latest
     steps:
       - name: Download build artifacts
         uses: actions/download-artifact@v2
         with:
           name: calendar-artifacts
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-gh-pages@v3
-        with:
-          token: ${{ github.token }}
-          publish_dir: ./
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
