@@ -1,8 +1,5 @@
 import axiod from "https://deno.land/x/axiod@0.26.2/mod.ts";
-import {
-  Event,
-  Calendar,
-} from "https://deno.land/x/simple_ics@0.1.1/mod.ts";
+import { Event, Calendar } from "https://deno.land/x/simple_ics@0.1.1/mod.ts";
 import { LolEsportsClient } from "./api.ts";
 import { EsportEvent } from "./api.ts";
 
@@ -29,7 +26,7 @@ function eventToIcs(event: EsportEvent): Event | null {
     beginDate: date,
     endDate: addHoursToDate(date, event.match.strategy.count * 0.5),
     desc: `${event.league.name} ${event.blockName}: ${event.match?.teams[0].name} vs ${event.match?.teams[1].name}`,
-    zone: "utc"
+    zone: "utc",
   });
 }
 
@@ -43,9 +40,14 @@ if (import.meta.main) {
       .map(eventToIcs)
       .filter((event) => event !== null) as Event[];
     const calendar = new Calendar(icsEvents);
+    const result = calendar.toString().split("\n");
+    result.splice(2, 1, "PRODID:bf-dev/lolesports-icloud-calendar");
+    result.splice(2, 0, `NAME:${league.name}`);
+    result.splice(2, 0, `X-WR-CALNAME:${league.name}`);
+
     await Deno.writeTextFile(
       `./build/calendars/${league.slug}.ics`,
-      calendar.toString()
+      result.join("\n")
     );
   });
   await Deno.writeTextFile(
