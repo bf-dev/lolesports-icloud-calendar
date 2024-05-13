@@ -24,7 +24,11 @@ jobs:
         uses: denoland/setup-deno@v1
         with:
           deno-version: v1.42.1
-
+          
+      - name: Remove .gitkeep files
+        run: |
+          find . -type f -name ".gitkeep" -delete
+          
       - name: Build Calendar
         run: deno run --allow-write --allow-net main.ts
 
