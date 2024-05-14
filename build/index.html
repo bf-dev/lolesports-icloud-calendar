@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar ICS URLs</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: black;
+        color:white;
+      }
+
+      .calendar-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .calendar-image {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+        border-radius: 5px;
+      }
+
+      .calendar-info {
+        flex-grow: 1;
+      }
+
+      .copy-button {
+        padding: 5px 10px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .copy-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="calendarList"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("./calendars.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const calendarList = document.getElementById("calendarList");
+            data.forEach((calendar) => {
+              const item = document.createElement("div");
+              item.className = "calendar-item";
+
+              const image = document.createElement("img");
+              image.src = calendar.image;
+              image.className = "calendar-image";
+
+              const info = document.createElement("div");
+              info.className = "calendar-info";
+              info.innerHTML = `<strong>${calendar.name}</strong><br>${calendar.url}`;
+
+              const button = document.createElement("button");
+              button.className = "copy-button";
+              button.textContent = "Copy URL";
+              button.onclick = function () {
+                navigator.clipboard
+                  .writeText(calendar.url)
+                  .then(() => alert("URL copied to clipboard!"))
+                  .catch((err) => console.error("Error copying text: ", err));
+              };
+
+              item.appendChild(image);
+              item.appendChild(info);
+              item.appendChild(button);
+
+              calendarList.appendChild(item);
+            });
+          })
+          .catch((error) => console.error("Error fetching calendars: ", error));
+      });
+    </script>
+  </body>
+</html>

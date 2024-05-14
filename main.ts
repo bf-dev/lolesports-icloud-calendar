@@ -50,8 +50,15 @@ if (import.meta.main) {
       result.join("\n")
     );
   });
+  const calendarsInfo = leagues.map((league) => ({
+    name: league.name,
+    description: null,
+    url: `https://lolesports.calendar.devbf.com/calendars/${league.slug}.ics`,
+    image: league.image,
+  }));
+
   await Deno.writeTextFile(
     `./build/calendars.json`,
-    JSON.stringify(leagues, null, 2)
+    JSON.stringify(calendarsInfo, null, 2)
   );
 }
