@@ -1,21 +1,33 @@
 [
   {
-    "name": "MSI",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/msi.ics",
-    "image": "http://static.lolesports.com/leagues/1592594634248_MSIDarkBG.png"
-  },
-  {
     "name": "LEC",
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/lec.ics",
     "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
   },
   {
+    "name": "LCS",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/lcs.ics",
+    "image": "http://static.lolesports.com/leagues/1706356907418_LCSNew-01-FullonDark.png"
+  },
+  {
     "name": "EMEA Masters",
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/emea_masters.ics",
     "image": "http://static.lolesports.com/leagues/1669375535108_EM_Icon_Green1.png"
+  },
+  {
+    "name": "LCK",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/lck.ics",
+    "image": "http://static.lolesports.com/leagues/lck-color-on-black.png"
+  },
+  {
+    "name": "LPL",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/lpl.ics",
+    "image": "http://static.lolesports.com/leagues/1592516115322_LPL-01-FullonDark.png"
   },
   {
     "name": "NLC",
@@ -30,22 +42,10 @@
     "image": "http://static.lolesports.com/leagues/1641287979138_EliteSeriesMarkWhite.png"
   },
   {
-    "name": "Esports Balkan League",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/esports_balkan_league.ics",
-    "image": "http://static.lolesports.com/leagues/1625735031226_ebl_crest-whitePNG.png"
-  },
-  {
     "name": "CBLOL",
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/cblol-brazil.ics",
     "image": "http://static.lolesports.com/leagues/cblol-logo-symbol-offwhite.png"
-  },
-  {
-    "name": "LCK",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/lck.ics",
-    "image": "http://static.lolesports.com/leagues/lck-color-on-black.png"
   },
   {
     "name": "LCL",
@@ -60,12 +60,6 @@
     "image": "http://static.lolesports.com/leagues/lco-color-white.png"
   },
   {
-    "name": "LCS",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/lcs.ics",
-    "image": "http://static.lolesports.com/leagues/1706356907418_LCSNew-01-FullonDark.png"
-  },
-  {
     "name": "LJL",
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/ljl-japan.ics",
@@ -76,12 +70,6 @@
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/lla.ics",
     "image": "http://static.lolesports.com/leagues/1592516315279_LLA-01-FullonDark.png"
-  },
-  {
-    "name": "LPL",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/lpl.ics",
-    "image": "http://static.lolesports.com/leagues/1592516115322_LPL-01-FullonDark.png"
   },
   {
     "name": "PCS",
@@ -102,10 +90,10 @@
     "image": "http://static.lolesports.com/leagues/1677578094811_VCS_SYMBOL_TITANIUM_RGB.png"
   },
   {
-    "name": "Worlds Qualifying Series",
+    "name": "MSI",
     "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/wqs.ics",
-    "image": "http://static.lolesports.com/leagues/1693555886600_lolesports_icon_ice-01.png"
+    "url": "https://lolesports.calendar.devbf.com/calendars/msi.ics",
+    "image": "http://static.lolesports.com/leagues/1592594634248_MSIDarkBG.png"
   },
   {
     "name": "Worlds",
@@ -114,10 +102,10 @@
     "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
   },
   {
-    "name": "All-Star Event",
+    "name": "Esports Balkan League",
     "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/all-star.ics",
-    "image": "http://static.lolesports.com/leagues/1592594737227_ASEDarkBG.png"
+    "url": "https://lolesports.calendar.devbf.com/calendars/esports_balkan_league.ics",
+    "image": "http://static.lolesports.com/leagues/1625735031226_ebl_crest-whitePNG.png"
   },
   {
     "name": "Liga Portuguesa ",
@@ -202,6 +190,18 @@
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/south_regional_league.ics",
     "image": "http://static.lolesports.com/leagues/1684147981719_LRS-021.png"
+  },
+  {
+    "name": "Worlds Qualifying Series",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/wqs.ics",
+    "image": "http://static.lolesports.com/leagues/1693555886600_lolesports_icon_ice-01.png"
+  },
+  {
+    "name": "All-Star Event",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/all-star.ics",
+    "image": "http://static.lolesports.com/leagues/1592594737227_ASEDarkBG.png"
   },
   {
     "name": "TFT Remix Rumble",
