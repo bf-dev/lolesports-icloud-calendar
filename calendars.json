@@ -18,6 +18,12 @@
     "image": "http://static.lolesports.com/leagues/1669375535108_EM_Icon_Green1.png"
   },
   {
+    "name": "NLC",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/nlc.ics",
+    "image": "http://static.lolesports.com/leagues/1641490922073_nlc_logo.png"
+  },
+  {
     "name": "LCK",
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/lck.ics",
@@ -28,18 +34,6 @@
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/lpl.ics",
     "image": "http://static.lolesports.com/leagues/1592516115322_LPL-01-FullonDark.png"
-  },
-  {
-    "name": "NLC",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/nlc.ics",
-    "image": "http://static.lolesports.com/leagues/1641490922073_nlc_logo.png"
-  },
-  {
-    "name": "Elite Series",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/elite_series.ics",
-    "image": "http://static.lolesports.com/leagues/1641287979138_EliteSeriesMarkWhite.png"
   },
   {
     "name": "CBLOL",
@@ -100,6 +94,12 @@
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/worlds.ics",
     "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+  },
+  {
+    "name": "Elite Series",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/elite_series.ics",
+    "image": "http://static.lolesports.com/leagues/1641287979138_EliteSeriesMarkWhite.png"
   },
   {
     "name": "Esports Balkan League",
@@ -204,7 +204,7 @@
     "image": "http://static.lolesports.com/leagues/1592594737227_ASEDarkBG.png"
   },
   {
-    "name": "TFT Remix Rumble",
+    "name": "TFT Inkborn Fables",
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/tft_esports.ics",
     "image": "http://static.lolesports.com/leagues/1709019520956_tft-championship-s10-logo-colored-1200x1200.png"
