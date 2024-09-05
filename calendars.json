@@ -162,6 +162,12 @@
     "image": "http://static.lolesports.com/leagues/1671535837069_Emblemwhite1.png"
   },
   {
+    "name": "Americas Challengers",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/americas_challengers.ics",
+    "image": "http://static.lolesports.com/leagues/1725441088997_AmericasChallengers_Symbol.png"
+  },
+  {
     "name": "NACL",
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/north_american_challenger_league.ics",
