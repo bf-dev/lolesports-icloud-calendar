@@ -1,5 +1,11 @@
 [
   {
+    "name": "Worlds",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/worlds.ics",
+    "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+  },
+  {
     "name": "LEC",
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/lec.ics",
@@ -88,12 +94,6 @@
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/msi.ics",
     "image": "http://static.lolesports.com/leagues/1592594634248_MSIDarkBG.png"
-  },
-  {
-    "name": "Worlds",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/worlds.ics",
-    "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
   },
   {
     "name": "Elite Series",
