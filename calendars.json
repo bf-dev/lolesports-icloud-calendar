@@ -214,5 +214,17 @@
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/duelo_de_reyes.ics",
     "image": "http://static.lolesports.com/leagues/1695282324552_B.png"
+  },
+  {
+    "name": "First Stand",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/first_stand.ics",
+    "image": "http://static.lolesports.com/leagues/1731329161834_LOLESPORTSICON.png"
+  },
+  {
+    "name": "LTA North",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/lta_n.ics",
+    "image": "http://static.lolesports.com/leagues/1731419234638_LTANORTH-LOGO_Blue_RGB2000px.png"
   }
 ]
