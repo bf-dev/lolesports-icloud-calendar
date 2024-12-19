@@ -198,12 +198,6 @@
     "image": "http://static.lolesports.com/leagues/1684147981719_LRS-021.png"
   },
   {
-    "name": "All-Star Event",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/all-star.ics",
-    "image": "http://static.lolesports.com/leagues/1592594737227_ASEDarkBG.png"
-  },
-  {
     "name": "TFT Macao Open ",
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/tft_esports.ics",
@@ -244,5 +238,11 @@
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/lcp.ics",
     "image": "http://static.lolesports.com/leagues/1733468139601_lcp-color-golden.png"
+  },
+  {
+    "name": "Rift Legends",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/rift_legends.ics",
+    "image": "http://static.lolesports.com/leagues/1734525714631_LOLESPORTSICON.png"
   }
 ]
