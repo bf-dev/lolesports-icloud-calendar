@@ -1,27 +1,21 @@
 [
   {
-    "name": "Worlds",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/worlds.ics",
-    "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
-  },
-  {
     "name": "LEC",
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/lec.ics",
     "image": "http://static.lolesports.com/leagues/1592516184297_LEC-01-FullonDark.png"
   },
   {
-    "name": "LCS",
+    "name": "LTA North",
     "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/lcs.ics",
-    "image": "http://static.lolesports.com/leagues/1706356907418_LCSNew-01-FullonDark.png"
+    "url": "https://lolesports.calendar.devbf.com/calendars/lta_n.ics",
+    "image": "http://static.lolesports.com/leagues/1731566778368_LTANORTH-LOGO_Blue_RGB2000px.png"
   },
   {
-    "name": "EMEA Masters",
+    "name": "LTA South",
     "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/emea_masters.ics",
-    "image": "http://static.lolesports.com/leagues/1669375535108_EM_Icon_Green1.png"
+    "url": "https://lolesports.calendar.devbf.com/calendars/lta_s.ics",
+    "image": "http://static.lolesports.com/leagues/1731566868757_LTASOUTH-LOGO_Red_RGB2000px.png"
   },
   {
     "name": "NLC",
@@ -42,22 +36,16 @@
     "image": "http://static.lolesports.com/leagues/1592516115322_LPL-01-FullonDark.png"
   },
   {
-    "name": "CBLOL",
+    "name": "LCP",
     "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/cblol-brazil.ics",
-    "image": "http://static.lolesports.com/leagues/cblol-logo-symbol-offwhite.png"
+    "url": "https://lolesports.calendar.devbf.com/calendars/lcp.ics",
+    "image": "http://static.lolesports.com/leagues/1733468139601_lcp-color-golden.png"
   },
   {
-    "name": "LCL",
+    "name": "EMEA Masters",
     "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/lcl.ics",
-    "image": "http://static.lolesports.com/leagues/1593016885758_LCL-01-FullonDark.png"
-  },
-  {
-    "name": "LCO",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/lco.ics",
-    "image": "http://static.lolesports.com/leagues/lco-color-white.png"
+    "url": "https://lolesports.calendar.devbf.com/calendars/emea_masters.ics",
+    "image": "http://static.lolesports.com/leagues/1669375535108_EM_Icon_Green1.png"
   },
   {
     "name": "LJL",
@@ -66,22 +54,10 @@
     "image": "http://static.lolesports.com/leagues/1733997208721_LJL_icon_white_724px.png"
   },
   {
-    "name": "LLA",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/lla.ics",
-    "image": "http://static.lolesports.com/leagues/1592516315279_LLA-01-FullonDark.png"
-  },
-  {
     "name": "PCS",
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/pcs.ics",
     "image": "http://static.lolesports.com/leagues/1592515942679_PCS-01-FullonDark.png"
-  },
-  {
-    "name": "TCL",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/turkiye-sampiyonluk-ligi.ics",
-    "image": "http://static.lolesports.com/leagues/1672744089338_TCL_ICON_COLOR.png"
   },
   {
     "name": "VCS",
@@ -90,10 +66,10 @@
     "image": "http://static.lolesports.com/leagues/1677578094811_VCS_SYMBOL_TITANIUM_RGB.png"
   },
   {
-    "name": "MSI",
+    "name": "TCL",
     "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/msi.ics",
-    "image": "http://static.lolesports.com/leagues/1592594634248_MSIDarkBG.png"
+    "url": "https://lolesports.calendar.devbf.com/calendars/turkiye-sampiyonluk-ligi.ics",
+    "image": "http://static.lolesports.com/leagues/1672744089338_TCL_ICON_COLOR.png"
   },
   {
     "name": "Elite Series",
@@ -138,10 +114,10 @@
     "image": "http://static.lolesports.com/leagues/1703058345246_IMG_4673.png"
   },
   {
-    "name": "Ultraliga",
+    "name": "Rift Legends",
     "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/ultraliga.ics",
-    "image": "http://static.lolesports.com/leagues/1639390623717_ULTRALIGA_logo_sq_cyan.png"
+    "url": "https://lolesports.calendar.devbf.com/calendars/rift_legends.ics",
+    "image": "http://static.lolesports.com/leagues/1734525714631_LOLESPORTSICON.png"
   },
   {
     "name": "SuperLiga",
@@ -198,10 +174,58 @@
     "image": "http://static.lolesports.com/leagues/1684147981719_LRS-021.png"
   },
   {
+    "name": "Worlds",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/worlds.ics",
+    "image": "http://static.lolesports.com/leagues/1592594612171_WorldsDarkBG.png"
+  },
+  {
+    "name": "MSI",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/msi.ics",
+    "image": "http://static.lolesports.com/leagues/1592594634248_MSIDarkBG.png"
+  },
+  {
     "name": "TFT Macao Open ",
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/tft_esports.ics",
     "image": "http://static.lolesports.com/leagues/1723029828764_TFT_GRADIENT_2.png"
+  },
+  {
+    "name": "LCS",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/lcs.ics",
+    "image": "http://static.lolesports.com/leagues/1706356907418_LCSNew-01-FullonDark.png"
+  },
+  {
+    "name": "LLA",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/lla.ics",
+    "image": "http://static.lolesports.com/leagues/1592516315279_LLA-01-FullonDark.png"
+  },
+  {
+    "name": "Ultraliga",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/ultraliga.ics",
+    "image": "http://static.lolesports.com/leagues/1639390623717_ULTRALIGA_logo_sq_cyan.png"
+  },
+  {
+    "name": "LCO",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/lco.ics",
+    "image": "http://static.lolesports.com/leagues/lco-color-white.png"
+  },
+  {
+    "name": "LCL",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/lcl.ics",
+    "image": "http://static.lolesports.com/leagues/1593016885758_LCL-01-FullonDark.png"
+  },
+  {
+    "name": "CBLOL",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/cblol-brazil.ics",
+    "image": "http://static.lolesports.com/leagues/cblol-logo-symbol-offwhite.png"
   },
   {
     "name": "King's Duel",
@@ -216,33 +240,9 @@
     "image": "http://static.lolesports.com/leagues/1731329161834_LOLESPORTSICON.png"
   },
   {
-    "name": "LTA North",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/lta_n.ics",
-    "image": "http://static.lolesports.com/leagues/1731566778368_LTANORTH-LOGO_Blue_RGB2000px.png"
-  },
-  {
     "name": "LTA Cross-Conference",
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/lta_cross.ics",
     "image": "http://static.lolesports.com/leagues/1731566966819_LTA-LOGO-LightGold_RGB2000px.png"
-  },
-  {
-    "name": "LTA South",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/lta_s.ics",
-    "image": "http://static.lolesports.com/leagues/1731566868757_LTASOUTH-LOGO_Red_RGB2000px.png"
-  },
-  {
-    "name": "LCP",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/lcp.ics",
-    "image": "http://static.lolesports.com/leagues/1733468139601_lcp-color-golden.png"
-  },
-  {
-    "name": "Rift Legends",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/rift_legends.ics",
-    "image": "http://static.lolesports.com/leagues/1734525714631_LOLESPORTSICON.png"
   }
 ]
