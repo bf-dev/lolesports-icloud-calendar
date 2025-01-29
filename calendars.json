@@ -146,7 +146,7 @@
   {
     "name": "NACL",
     "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/north_american_challenger_league.ics",
+    "url": "https://lolesports.calendar.devbf.com/calendars/nacl.ics",
     "image": "http://static.lolesports.com/leagues/1671126494281_NACL23_Icon_WHT1.png"
   },
   {
@@ -154,12 +154,6 @@
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/lck_challengers_league.ics",
     "image": "http://static.lolesports.com/leagues/lck-cl-white.png"
-  },
-  {
-    "name": "CBLOL Academy",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/cblol_academy.ics",
-    "image": "http://static.lolesports.com/leagues/cblol-acad-white.png"
   },
   {
     "name": "North Regional League",
@@ -172,6 +166,12 @@
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/south_regional_league.ics",
     "image": "http://static.lolesports.com/leagues/1684147981719_LRS-021.png"
+  },
+  {
+    "name": "CBLOL Academy",
+    "description": null,
+    "url": "https://lolesports.calendar.devbf.com/calendars/cd.ics",
+    "image": "http://static.lolesports.com/leagues/cblol-acad-white.png"
   },
   {
     "name": "Worlds",
