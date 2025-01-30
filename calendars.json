@@ -204,12 +204,6 @@
     "image": "http://static.lolesports.com/leagues/1592516315279_LLA-01-FullonDark.png"
   },
   {
-    "name": "Ultraliga",
-    "description": null,
-    "url": "https://lolesports.calendar.devbf.com/calendars/ultraliga.ics",
-    "image": "http://static.lolesports.com/leagues/1639390623717_ULTRALIGA_logo_sq_cyan.png"
-  },
-  {
     "name": "LCO",
     "description": null,
     "url": "https://lolesports.calendar.devbf.com/calendars/lco.ics",
